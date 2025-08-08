@@ -11,11 +11,23 @@ section {
 
 #main {
     background-image: url(img/bgMAIN.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 
 .maskot {
     width: 125px;
+    margin-left: -250px;
+}
+
+.decor {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 
@@ -64,9 +76,44 @@ section {
 
 .window__content {
     background-color: #FFFFFF;
+    padding: 40px;
+
 }
 
 .window {
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 0 5px black;
+    margin-bottom: 20px;
+}
+
+.window__title {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 80px;
+    color: #2B2D35;
+}
+
+.window__info {
+    font-family: Comfortaa;
+    font-weight: 700;
+    font-size: 20px;
+    color: #2B2D35;
+}
+
+.button {
+    font-family: Comfortaa;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #BBFF2C;
+    border: 2px solid black;
+    border-radius: 100px;
+    box-shadow: 10px 5px black;
+    padding: 22px 26px;
+    display: block;
+    transition-duration: 0.5s;
+}
+
+.button:hover {
+    color: #a560ff
 }
