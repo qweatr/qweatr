@@ -19,8 +19,8 @@ section {
 }
 
 
-.window__buttons
-.window__buttons::before
+.window__buttons,
+.window__buttons::before,
 .window__buttons::after{
     height: 22px;
     width: 22px;
@@ -30,12 +30,12 @@ section {
 }
 
 
-.window__buttons::before
+.window__buttons::before,
 .window__buttons::after {
     content: '';
     display: block;
     position: absolute;
-    top: 0;
+    top: -1px;
 }
 
 
@@ -56,6 +56,17 @@ section {
 }
 
 
+.window__heading {
+    background-color: #D2D0F7;
+    padding: 15px 20px;
+}
+
+
+.window__content {
+    background-color: #FFFFFF;
+}
 
 .window {
+    border-radius: 10px;
+    overflow: hidden;
 }
