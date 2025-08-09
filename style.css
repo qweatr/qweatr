@@ -36,8 +36,23 @@ section {
     position: absolute;
     bottom: 0;
     left: 0;
+    animation-name: jump;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
 }
 
+.planet {
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
 
 .window__buttons,
 .window__buttons::before,
@@ -120,6 +135,8 @@ section {
     padding: 22px 26px;
     display: block;
     transition-duration: 0.5s;
+    color: black;
+    width: max-content;
 }
 
 /* .button about__button {
@@ -130,3 +147,61 @@ section {
     background-color: #a560ff;
     color: #ffffff;
 }
+
+
+.window__about {
+    display: flex;
+    align-items: center;
+}
+
+
+.about__title {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 80px;
+    color: #ffffff;
+    margin-bottom: 120px;
+    text-shadow: 5px 5px black;
+}
+
+.about__content {
+    background-color: #792AFF;
+    color: white;
+    padding: 40px;
+    padding-right: 20px;
+}
+
+.about__info {
+    font-family: Comfortaa;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #D2D0F7;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+@keyframes jump {
+    from {
+        transform: translateY(0);
+    }
+    
+    to {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(-20deg);
+    }
+
+    to {
+        transform: rotate(20deg);
+    }
+}
+
