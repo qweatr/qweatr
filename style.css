@@ -18,6 +18,14 @@ section {
     height: 100%;
 }
 
+#about {
+    background-image: url(img/bgABOUT.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 
 .maskot {
     width: 125px;
@@ -80,21 +88,21 @@ section {
 
 }
 
-.window {
+.window__main {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px black;
     margin-bottom: 20px;
 }
 
-.window__title {
+.main__title {
     font-family: Inter;
     font-weight: 700;
     font-size: 80px;
     color: #2B2D35;
 }
 
-.window__info {
+.main__info {
     font-family: Comfortaa;
     font-weight: 700;
     font-size: 20px;
@@ -114,6 +122,11 @@ section {
     transition-duration: 0.5s;
 }
 
+/* .button about__button {
+
+} */
+
 .button:hover {
-    color: #a560ff
+    background-color: #a560ff;
+    color: #ffffff;
 }
