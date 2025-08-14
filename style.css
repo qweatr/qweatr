@@ -54,6 +54,42 @@ section {
     animation-timing-function: linear;
 }
 
+.logo {
+    color: #BBFF2C;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 64px;
+}
+
+
+header {
+    color: #200153;
+}
+
+
+.header__logo {
+    color: #BBFF2C;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 64px;
+}
+
+
+.header__card {
+    font-family: Comfortaa;
+    font-weight: 700;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #792AFF;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 10px;
+    gap: 10px;
+    margin: 20px;
+    text-decoration: none;
+}
+
+
 .window__buttons,
 .window__buttons::before,
 .window__buttons::after{
@@ -139,9 +175,6 @@ section {
     width: max-content;
 }
 
-/* .button about__button {
-
-} */
 
 .button:hover {
     background-color: #a560ff;
