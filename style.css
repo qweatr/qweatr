@@ -54,24 +54,13 @@ section {
     animation-timing-function: linear;
 }
 
-.logo {
-    color: #BBFF2C;
-    font-family: Inter;
-    font-weight: 700;
-    font-size: 64px;
-}
-
-
-header {
-    color: #200153;
-}
-
 
 .header__logo {
     color: #BBFF2C;
     font-family: Inter;
     font-weight: 700;
     font-size: 64px;
+    position: fixed;
 }
 
 
@@ -173,6 +162,7 @@ header {
     transition-duration: 0.5s;
     color: black;
     width: max-content;
+    text-decoration: none;
 }
 
 
