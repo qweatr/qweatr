@@ -9,7 +9,7 @@
 <body>
     <header>
         <p class="header__logo">DK</p>
-        <div class="header_cards">
+        <div class="header__cards">
             <a class="header__card active" href=#main>Главная</a>
             <a class="header__card" href=#about>Обо мне</a>
             <a class="header__card" href=#skills>Навыки</a>
@@ -44,14 +44,31 @@
                 <div class='window__heading'>
                     <div class="window__buttons"></div>
                 </div>
-                <img src='img/photo.png'>
-                <p> <b>Где живу: </b>США</p>
-                <p> <b>Дата Рождения: </b>2010</p>
+                <img src='img/image.png' class="image__maj">
+                <p class="window_info"> <b>Где живу: </b>США</p>
+                <p class="window_info"> <b>Дата Рождения: </b>2010</p>
             </div>
         </div>
         <img src="img/cloud.png" class="cloud">
     </section>
-    <section id="skills"></section>
+    <section id="skills">
+        <h1 class="skills__title">НАВЫКИ</h1>
+        <div class="window__skills">
+            <div class='window__heading'>
+                <div class="window__buttons"></div>
+            </div>
+            <div class="skills__content">
+                <p class="skills__info">ЭТОТ САЙТ Я СДЕЛАЛ В РАМКАХ ОБУЧЕНИЯ ШКОЛЫ ROCKET TECH SCHOOL</p>
+                <div class="skills__img">
+                    <img src="img/html.png">
+                    <img src="img/css.png">
+                    <img src="img/js.png">
+                </div>
+                <a class="button" href=#works>Смотреть работы</a>
+            </div>
+        </div>
+        <img src="img/moving-planet.png" alt="" class="decor">
+    </section>
     <section id="works"></section>
     <section id="reviews"></section>
     <script src="script.js"></script>
