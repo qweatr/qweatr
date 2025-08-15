@@ -2,6 +2,7 @@
 
 * {
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 section {
@@ -25,6 +26,7 @@ section {
     justify-content: center;
     align-items: center;
     height: 100%;
+    position: relative;
 }
 
 .maskot {
@@ -55,12 +57,25 @@ section {
 }
 
 
+.cloud {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+header {
+    position: fixed;
+}
+
+
 .header__logo {
     color: #BBFF2C;
     font-family: Inter;
     font-weight: 700;
     font-size: 64px;
-    position: fixed;
 }
 
 
@@ -68,8 +83,8 @@ section {
     font-family: Comfortaa;
     font-weight: 700;
     font-size: 20px;
-    color: #ffffff;
-    background-color: #792AFF;
+    color: black;
+    background-color: #ffffff;
     border: 2px solid black;
     border-radius: 12px;
     padding: 10px;
@@ -78,6 +93,11 @@ section {
     text-decoration: none;
 }
 
+
+.active {
+    background-color: #792AFF;
+    color: #ffffff;
+}
 
 .window__buttons,
 .window__buttons::before,
@@ -225,6 +245,16 @@ section {
 
     to {
         transform: rotate(20deg);
+    }
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(20px);
     }
 }
 
