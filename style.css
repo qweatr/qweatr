@@ -7,6 +7,8 @@
 
 section {
     min-height: 100vh;
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -87,24 +89,25 @@ section {
 
 
 header {
-    border: 2px solid red;
     display: flex;
-    align-items: center;
+    justify-content: center;
     position: fixed;
     z-index: 100;
+    width: 100%
 }
 
 
 .header__logo {
-    border: 4px solid green;
     color: #BBFF2C;
     font-family: Inter;
     font-weight: 700;
     font-size: 64px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .header__cards {
-    border: 4px solid blue;
     display: flex;
 }
 
@@ -258,11 +261,17 @@ header {
 }
 
 .window_info {
-    font-family: Inter;
-    font-weight: 700;
+    font-family: Comfortaa;
+    font-weight: 400;
     font-size: 20px;
     margin: 20px
 }
+
+
+.window__info {
+    font-weight: 700;
+}
+
 
 .skills__title {
     font-family: Inter;
@@ -284,14 +293,15 @@ header {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    padding: 40px
 }
 
 .skills__info {
     font-family: Inter;
     font-weight: 700;
     font-size: 20px;
-    padding: 30px;
+    text-align: center;
 }
 
 .skills__img {
@@ -331,3 +341,21 @@ header {
     }
 }
 
+@media (max-width: 1000px) {
+    .header__cards {
+        display: none;
+    }
+    .main__title {
+        font-size: 30px;
+
+    }
+    .main__info {
+        font-size: 14px;
+    }
+    .window__content {
+        padding: 16px
+    }
+    .maskot {
+        margin-left: 0;
+    }
+}
