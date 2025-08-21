@@ -41,6 +41,15 @@ section {
 }
 
 
+#works {
+    background-image: url(img/bgWORKS.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 .image__maj {
     height: 186px;
     width: 336px;
@@ -311,6 +320,26 @@ header {
     padding: 40px;
 }
 
+.works__title {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 80px;
+    color: #ffffff;
+    margin-bottom: 115px;
+    text-shadow: 5px 5px black;
+}
+
+
+.works__content {
+    display: flex;
+}
+
+.works__img {
+    height: 300px;
+    width: 500px;
+    padding: 19px;
+}
+
 @keyframes jump {
     from {
         transform: translateY(0);
@@ -358,4 +387,8 @@ header {
     .maskot {
         margin-left: 0;
     }
+    .header__logo {
+        font-size: 40px;
+    }
+    
 }
