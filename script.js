@@ -1,7 +1,11 @@
 const sections = Array.from(document.querySelectorAll('section'));
 const buttons = document.querySelectorAll('.header__card');
 let activeButton = document.querySelector('.active')
+const button = document.querySelector('.mobile__button')
 
+function toogleMenu() {
+    console.log('Hello')
+}
 function handleScroll() {
     const position = window.scrollY + 1
     let targetSection = null
@@ -21,3 +25,4 @@ function handleScroll() {
 }
 
 window.addEventListener('scroll', handleScroll)
+button.addEventListener('click', toogleMenu)
