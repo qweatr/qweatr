@@ -53,6 +53,7 @@ section {
 .image__maj {
     height: 186px;
     width: 336px;
+    padding: 20px;
 }
 
 .maskot {
@@ -325,19 +326,19 @@ header {
     font-weight: 700;
     font-size: 80px;
     color: #ffffff;
-    margin-bottom: 115px;
+    margin-bottom: 82px;
     text-shadow: 5px 5px black;
 }
 
 
 .works__content {
     display: flex;
+    justify-content: space-between;
 }
 
 .works__img {
     height: 300px;
     width: 500px;
-    padding: 19px;
 }
 
 @keyframes jump {
@@ -371,6 +372,9 @@ header {
 }
 
 @media (max-width: 1000px) {
+    .button {
+        font-size: 14px;
+    }
     .header__cards {
         display: none;
     }
@@ -390,5 +394,34 @@ header {
     .header__logo {
         font-size: 40px;
     }
-    
+    .window__about {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about__content {
+        margin-top: 34px;
+        box-shadow: 10px 5px black;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        max-width: 320px;
+    }
+    .about__title {
+        font-size: 30px;
+    }
+    .about__info {
+        font-size: 14px;
+    }
+    .skills__title {
+        font-size: 30px;
+    }
+    .skills__info {
+        font-size: 14px;
+    }
+    .works__title {
+        font-size: 30px;
+    }
+    .works__content {
+        display: flex;
+        flex-direction: column;
+    }
 }
