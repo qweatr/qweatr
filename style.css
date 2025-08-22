@@ -339,11 +339,12 @@ header {
 
 .works__content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .works__img {
     width: 30%;
+    padding: 19px;
 }
 
 @keyframes jump {
@@ -445,7 +446,7 @@ header {
         font-size: 30px;
     }
     .works__content {
-        display: flex;
-        flex-direction: column;
+    
+    
     }
 }
