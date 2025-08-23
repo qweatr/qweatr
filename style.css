@@ -50,6 +50,16 @@ section {
     height: 100%;
 }
 
+
+#reviews {
+    background-image: url(img/bgCOMMENTS.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 .image__maj {
     height: 186px;
     width: 336px;
@@ -347,6 +357,73 @@ header {
     padding: 19px;
 }
 
+.reviews__title {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 80px;
+    color: #ffffff;
+    margin-bottom: 82px;
+    text-shadow: 5px 5px black;
+}
+
+
+.reviews__content {
+    display: flex;
+    align-items: center;
+}
+
+
+.user {
+    background-color: #D2D0F7;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 3px 5px black;
+    max-width: 200px;
+}
+
+
+
+.username {
+    font-family: Comfortaa;
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 14px;
+}
+
+
+.user__content {
+    font-family: Comfortaa;
+    font-weight: 400;
+    font-size: 20px;
+    color: #00000080
+}
+
+
+.review {
+    background-image: url(img/comment.png);
+    width: 300px;
+    padding: 19px 19px 52px 37px;
+    background-repeat: no-repeat;
+}
+
+
+.review__info {
+    font-family: Comfortaa;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+.review__content {
+    padding: 20px;
+    padding-top: 0;
+}
+
+
+.review__img {
+    padding-bottom: 10px;
+}
+
 @keyframes jump {
     from {
         transform: translateY(0);
@@ -445,8 +522,38 @@ header {
     .works__title {
         font-size: 30px;
     }
-    .works__content {
-    
-    
+    .reviews__title {
+        font-size: 30px;
+        padding-top: 72px
     }
+    .reviews__content {
+        display: flex;
+        flex-direction: column;
+    }
+    .review {
+        background-image: url(img/comment-mobile.png);
+        background-size: 100% 100%;
+        padding: 10px;
+    }
+    .username {
+        font-size: 14px;
+        padding-bottom: 10px
+    }
+    .review__img {
+        padding-bottom: 10px;
+    }
+    .user__content {
+        font-size: 14px;
+    }
+    .review__content {
+        padding: 10px
+    }
+    .review {
+        margin: 10px
+    }
+    .review__info {
+        font-weight: 400;
+        font-size: 14px;
+    }
+
 }
